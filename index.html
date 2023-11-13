@@ -1,0 +1,75 @@
+<!-- Name : Subash Pariyar (c0913543) -->
+<!-- Date: 12 November 2023 -->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- This meta tag for the viewport and this is used for the responsive  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Web Page</title>
+    <!-- Css link  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to My Web Page</h1>
+
+    <!-- Start Navigation bar -->
+    <nav>
+      <button id="menu-toggle">&#9776; Menu</button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <!-- Ending Navigation bar -->
+
+    <!-- Start form Section -->
+    <form>
+      <h1>Student details</h1>
+      <div class="form__control">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+
+      <div class="form__control">
+        <label>Gender:</label>
+        <div class="form_-label">
+          <label><input type="radio" name="gender" value="male" /> Male</label>
+          <label
+            ><input type="radio" name="gender" value="female" /> Female</label
+          >
+          <label
+            ><input type="radio" name="gender" value="other" /> Other</label
+          >
+        </div>
+      </div>
+      <div class="form__control">
+        <div class="form_-label">
+          <label
+            ><input
+              type="checkbox"
+              name="subscribe"
+              value="subscribe"
+            />Subscribe to Newsletter</label
+          >
+        </div>
+      </div>
+
+      <div class="form__control">
+        <label for="country">Country</label>
+        <select>
+          <option value="Afghanistan">Nepal</option>
+          <option value="Åland Islands">Canada</option>
+          <option value="Albania">India</option>
+        </select>
+      </div>
+
+      <!-- Button  -->
+
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- Ending Form section -->
+    <script src="script.js"></script>
+  </body>
+</html>

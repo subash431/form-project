@@ -1,0 +1,201 @@
+/*  Name : Subash Pariyar (c0913543) 
+    Date: 12 November 2023
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+h1 {
+  text-align: center;
+}
+
+nav {
+  background-color: #71f5d0;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: blue;
+}
+
+nav a:hover {
+  color: red;
+}
+/* styles.css */
+/* ... (Previous code) */
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 40%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #d7f1fa;
+}
+.form__control {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 8px;
+
+  box-sizing: border-box;
+  /* background-color: #dadfde; */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 0px gray;
+}
+input[type="text"],
+select:focus {
+  outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+input[type="submit"] {
+  background-color: #92478c;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 30%;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+.form_-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+form > h1 {
+  font-size: 20px;
+}
+nav button {
+  display: none; /* Initially hide the button on larger screens */
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 5px 0;
+    display: block;
+  }
+  nav button {
+    display: block;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px; /* Adjust this value as needed */
+    left: 0;
+
+    width: 100%;
+    background-color: #3498db;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  nav li {
+    margin: 0;
+    text-align: center;
+  }
+  form > h1 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  input[type="submit"] {
+    width: 100%;
+  }
+  form > h1 {
+    font-size: 15px;
+  }
+  form {
+    max-width: 100%;
+  }
+  body > h1 {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 300px) {
+  form {
+    gap: 1rem;
+    padding: 7px;
+  }
+  .form_-label {
+    gap: 1rem;
+  }
+  .form_-label > label {
+    font-size: 10px;
+  }
+  .form__control > label {
+    font-size: 10px;
+  }
+  input[type="text"],
+  select {
+    padding: 3px;
+    font-size: 10px;
+  }
+  input[type="submit"] {
+    padding: 3px;
+    font-size: 10px;
+  }
+  nav {
+    padding: 3px;
+    margin-bottom: 6px;
+  }
+  nav button {
+    font-size: 10px;
+  }
+  nav ul {
+    top: 40px;
+  }
+  nav li {
+    font-size: 10px;
+  }
+}
